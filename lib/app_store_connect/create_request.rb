@@ -3,6 +3,7 @@
 module AppStoreConnect
   class CreateRequest
     def self.inherited(klass)
+      super(klass)
       klass.include(Object::Data)
     end
 
