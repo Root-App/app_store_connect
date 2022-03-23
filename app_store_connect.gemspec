@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['kyle.decot@icloud.com']
 
   spec.summary       = 'A Ruby interface to the App Store Connect API'
-  spec.homepage      = 'https://github.com/kyledecot/app_store_connect'
+  spec.homepage      = 'https://github.com/Root-App/root_app_store_connect'
   spec.license       = 'MIT'
 
   spec.files         = Dir.chdir(File.expand_path(__dir__)) do
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.require_paths = ['lib']
+  spec.required_ruby_version = '>= 3.0.2'
 
   spec.add_runtime_dependency 'activesupport', '>= 6.0.3.1'
   spec.add_runtime_dependency 'jwt', '>= 1.4', '<= 2.2.1'

@@ -20,13 +20,12 @@ module AppStoreConnect
   class << self
     attr_accessor :config
 
-    def rel(id, type, array = false)
+    def rel(id, type, array: false)
       if array
-        return {data: [{id: id, type: type}]}.freeze
+        { data: [{ id: id, type: type }] }.freeze
       else
-        return {data: {id: id, type: type}}.freeze
+        { data: { id: id, type: type } }.freeze
       end
     end
-
   end
 end

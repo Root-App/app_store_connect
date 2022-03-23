@@ -6,11 +6,11 @@ RSpec.describe AppStoreConnect::Client do
   let(:issuer_id) { '69a6de70-03db-47e3-e053-5b8c7c11a4d1' }
 
   subject(:client) do
-    described_class.new(
-      issuer_id: issuer_id,
-      key_id: key_id,
-      private_key: private_key
-    )
+    described_class.new(**{
+                          issuer_id: issuer_id,
+                          key_id: key_id,
+                          private_key: private_key
+                        })
   end
 
   describe '#users' do
