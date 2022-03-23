@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['kyle.decot@icloud.com']
 
   spec.summary       = 'A Ruby interface to the App Store Connect API'
-  spec.homepage      = 'https://github.com/kyledecot/app_store_connect'
+  spec.homepage      = 'https://github.com/Root-App/root_app_store_connect'
   spec.license       = 'MIT'
 
   spec.files         = Dir.chdir(File.expand_path(__dir__)) do
